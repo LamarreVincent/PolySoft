@@ -9,8 +9,8 @@
 
     function ProfileController($rootScope, $scope) {
         var vm = this;
-        vm.name = "My name"
-        vm.events = "None"
+        vm.name = window.localStorage.getItem("ProfileName");
+        vm.logo = window.localStorage.getItem("Logo");
     }
 
    

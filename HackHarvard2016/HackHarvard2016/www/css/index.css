@@ -1,12 +1,5 @@
-﻿body {
-}
-
-#grid
-{
-}
-
-#section-header
-{
+﻿.svg-icon-accent path {
+  fill: #a31982;
 }
 
 #section-header img
@@ -20,27 +13,17 @@
     text-align:center;
 }
 
-#header-title
+.md-sidenav-left .nav-header
 {
-    background-color:#ff6a00; /*Orange*/
+    background-color: #3F51B5;
 }
 
-#header-sub
+.md-sidenav-left md-list
 {
-    background-color:#b6ff00; /*Lime*/
+    padding-top: 0;
 }
 
-#content-title
+.md-sidenav-left md-list md-icon
 {
-    background-color:#00ff90; /*Cyan*/
-}
-
-#nearby-event-1
-{
-    background-color:#0026ff; /*Blue*/
-}
-
-#nearby-event-2
-{
-    background-color:#b200ff; /*Purple*/
+    margin: 0;
 }
