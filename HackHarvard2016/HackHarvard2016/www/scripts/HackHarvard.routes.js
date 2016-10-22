@@ -13,19 +13,43 @@
     */
     function config($routeProvider, $locationProvider) {
       $routeProvider
-      // Index page
-      .when('/', {
-          controller: 'indexController',
+      .when('/Events', {
+          controller: 'EventsController',
           controllerAs: 'vm',
-          templateUrl: '/templates/home/index.html'
+          templateUrl: 'templates/Events/Events.html'
       })
-      .when('/test', {
-        controller: 'testController',
+    .when('/businessCard', {
+        controller: 'VirtualBusinessCardController',
         controllerAs: 'vm',
-        templateUrl: '/templates/home/test.html'
-      })
-      .otherwise('/');
+        templateUrl: 'templates/BusinessCards/BusinessCard.html'
+    })
+    .when('/Profile', {
+        controller: 'ProfileController',
+        controllerAs: 'vm',
+        templateUrl: 'templates/Profile/Profile.html'
+    })
+    .when('/NewProfile', {
+        controller: 'NewProfileController',
+        controllerAs: 'vm',
+        templateUrl: 'templates/Profile/NewProfile.html'
+    })
+    .when('/Home', {
+        controller: 'HomeController',
+        controllerAs: 'vm',
+        templateUrl: 'templates/home/Home.html',
+        resolve:
+            {
+                "check": function ($location) {
+                    window.localStorage.removeItem("ProfileName");
+                    var profileName = window.localStorage.getItem("ProfileName");
+                    if (profileName == null) {
+                        $location.path('/NewProfile');
+                    }
+                }
+            }
 
-      $locationProvider.html5Mode(true);
+    })
+      .otherwise('/Home');
+
     }
 })();
