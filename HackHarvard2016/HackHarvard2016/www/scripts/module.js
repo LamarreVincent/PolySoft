@@ -8,7 +8,8 @@
         'ngMaterial',
         'Profile',
         'Home',
-        'NewProfile'
+        'NewProfile',
+        'ngCordova'
     ]);
 
     angular.module('HackHarvard.routes', ['ngRoute']);
