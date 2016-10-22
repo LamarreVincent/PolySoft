@@ -1,5 +1,6 @@
 ﻿<div>
-    <input ng-bind="vm.name" />
-    <button ng-click="">Press to analyse your business card</button>
+    <input ng-model="vm.name" />
+    <input ng-model="vm.logo"/>
+    <button ng-click="vm.addLogo()">Press to add logo</button>
     <button ng-click="vm.save()">Save</button>
 </div>

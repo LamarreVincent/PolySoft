@@ -40,7 +40,6 @@
         resolve:
             {
                 "check": function ($location) {
-                    window.localStorage.removeItem("ProfileName");
                     var profileName = window.localStorage.getItem("ProfileName");
                     if (profileName == null) {
                         $location.path('/NewProfile');

@@ -1,2 +1,29 @@
-﻿body {
+﻿.svg-icon-accent path {
+  fill: #a31982;
+}
+
+#section-header img
+{
+    padding: 2px;
+    height: 150px;
+}
+
+#section-header .content
+{
+    text-align:center;
+}
+
+.md-sidenav-left .nav-header
+{
+    background-color: #3F51B5;
+}
+
+.md-sidenav-left md-list
+{
+    padding-top: 0;
+}
+
+.md-sidenav-left md-list md-icon
+{
+    margin: 0;
 }
