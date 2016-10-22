@@ -1,7 +1,7 @@
 ﻿(function() {
     'use strict';
     
-    var harvard = angular.module("HackHarvard", ['HackHarvard.routes', 'HackHarvard.test.controllers', "VirtualBusinessCard", "Events"]);
+    var harvard = angular.module("HackHarvard", ['HackHarvard.routes', 'HackHarvard.test.controllers', "VirtualBusinessCard", "Events", 'ngMaterial']);
 
     angular.module('HackHarvard.routes', ['ngRoute']);
     angular.module('HackHarvard.test.controllers', []);

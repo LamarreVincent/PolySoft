@@ -1,5 +1,6 @@
 {
-    "name": "HackHarvard2016",
-    "dependencies": {
-    }
+  "name": "HackHarvard2016",
+  "dependencies": {
+    "angular-material": "^1.1.1"
+  }
 }
