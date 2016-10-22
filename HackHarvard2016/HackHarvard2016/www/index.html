@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <base href="/bin" />
+    <base href="/" />
 
     <!--
         Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
@@ -21,35 +21,24 @@
     <script src="libs/angular-resource.min.js"></script>
     <script src="libs/angular-route.min.js"></script>
 
-    <script src="scripts/vCards.js"></script>
-    <script src="scripts/events.js"></script>
-    <script src="scripts/module.js"></script>
-    <script src="scripts/module.js"></script>
+    <script src="scripts/Initializer.js"></script>
+    <script src="scripts/Events/EventsController.js"></script>
+    <script src="scripts/BusinessCards/BusinessCardController.js"></script>
+    <script src="scripts/Profile/ProfileController.js"></script>
+    <script src="scripts/Home/HomeController.js"></script>
+    <script src="scripts/Profile/NewProfileController.js"></script>
     <script type="text/javascript" src="scripts/HackHarvard.routes.js"></script>
-    <script type="text/javascript" src="scripts/controllers/testController.controller.js"></script>
     
 
 </head>
 <body>
     <div ng-app="HackHarvard">
-        <div ng-controller="indexController">
+        <div >
             <p>Hello, your application is ready!</p>
-            <h3>Hello {{name}}!</h3>
             <div class="ng-view"></div>
         </div>
-        <div ng-controller="vcController">
-            <p>{{phoneNumber}}</p>
-            <p>{{name}}</p>
-        </div>
 
-        <div ng-controller="eventsController">
-            <p>{{name}}</p>
-            <ul>
-                <li ng-repeat="event in events">
-                    <p>{{event.name}}</p>
-                </li>
-            </ul>
-        </div>
+        
     </div>
     
     <script src="scripts/index.js"></script>
