@@ -33,6 +33,11 @@
         controllerAs: 'vm',
         templateUrl: 'templates/Profile/NewProfile.html'
     })
+    .when('/SpecificEvent', {
+        controller: 'SpecificEventController',
+        controllerAs: 'vm',
+        templateUrl: 'templates/Events/SpecificEvent.html'
+    })
     .when('/Home', {
         controller: 'HomeController',
         controllerAs: 'vm',

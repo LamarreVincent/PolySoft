@@ -9,7 +9,9 @@
         'Profile',
         'Home',
         'NewProfile',
-        'ngCordova'
+        'ngCordova',
+        'CardRecognize',
+        'SpecificEvent'
     ]);
 
     angular.module('HackHarvard.routes', ['ngRoute']);
@@ -19,6 +21,8 @@
     angular.module('Home', []);
     angular.module('NewProfile', []);
     angular.module('VirtualBusinessCard', []);
+    angular.module('CardRecognize', []);
+    angular.module('SpecificEvent', []);
 
 
     harvard.run();
