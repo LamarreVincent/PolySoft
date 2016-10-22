@@ -1,2 +1,46 @@
 ﻿body {
 }
+
+#grid
+{
+}
+
+#section-header
+{
+}
+
+#section-header img
+{
+    padding: 2px;
+    height: 150px;
+}
+
+#section-header .content
+{
+    text-align:center;
+}
+
+#header-title
+{
+    background-color:#ff6a00; /*Orange*/
+}
+
+#header-sub
+{
+    background-color:#b6ff00; /*Lime*/
+}
+
+#content-title
+{
+    background-color:#00ff90; /*Cyan*/
+}
+
+#nearby-event-1
+{
+    background-color:#0026ff; /*Blue*/
+}
+
+#nearby-event-2
+{
+    background-color:#b200ff; /*Purple*/
+}
