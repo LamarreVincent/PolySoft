@@ -12,7 +12,18 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
         
-        // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
+        var config = {
+            apiKey: "AIzaSyBaDDPA4Qs0kkod-3yinowsZz6YQ7h5Akg",
+            authDomain: "vbcard-a78ab.firebaseapp.com",
+            databaseURL: "https://vbcard-a78ab.firebaseio.com",
+            storageBucket: "vbcard-a78ab.appspot.com",
+            messagingSenderId: "868537869129"
+        };
+        firebase.initializeApp(config);
+
+        var database = firebase.database();
+
+
     };
 
     function onPause() {
