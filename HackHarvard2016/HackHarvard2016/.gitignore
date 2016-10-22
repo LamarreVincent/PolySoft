@@ -5,4 +5,4 @@
 [Pp]lugins/remote_ios.json
 [Pp]latforms/
 plugins/cordova-plugin-whitelist
-../*.suo
+bower_components
