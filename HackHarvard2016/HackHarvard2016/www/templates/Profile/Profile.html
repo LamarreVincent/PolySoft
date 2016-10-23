@@ -1,6 +1,23 @@
-﻿<div>
-    <p>
-        {{vm.name}}
-        {{vm.logo}}
-    </p>
+﻿<div md-colors="{background: 'primary'}">
+    <sidenav></sidenav>
+
+    <md-grid-list md-cols="6" md-row-height="2:2" md-gutter="0" id="profile">
+        <md-grid-tile md-colspan="6" md-rowspan="4" id="section-header">
+            <div layout="column" layout-align="center none">
+                <img ng-src={{vm.logo}} class="md-card-image profile-picture" alt="image caption" />
+                <div class="content">
+                    <div class="md-title">{{vm.name}}</div>
+                </div>
+            </div>
+        </md-grid-tile>
+    </md-grid-list>
 </div>
+<md-content class="md-padding">
+    <md-nav-bar md-selected-nav-item="vm.currentNavItem" nav-bar-aria-label="navigation links" layout="row" layout-align="space-between center">
+        <md-nav-item md-nav-click="goto('cards')" name="cards">Cards</md-nav-item>
+        <md-nav-item md-nav-click="goto('events')" name="events">Events</md-nav-item>
+        <md-nav-item md-nav-click="goto('settings')" name="settings">Settings</md-nav-item>
+    </md-nav-bar>
+    <div class="ext-content">
+        External content for '<span>{{vm.currentNavItem}}</span>'
+    </div>

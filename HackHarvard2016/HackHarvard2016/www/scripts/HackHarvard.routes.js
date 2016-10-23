@@ -41,7 +41,9 @@
             {
                 "check": function ($location) {
                     var profileName = window.localStorage.getItem("ProfileName");
-                    if (profileName == null || profileName == "undefined") {
+
+                    if (profileName == null || profileName == "undefined")
+                    {
                         $location.path('/NewProfile');
                     }
                 }

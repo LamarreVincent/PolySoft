@@ -1,6 +1,22 @@
-﻿<div>
-    <input ng-model="vm.name" />
-    <input ng-model="vm.logo"/>
-    <button ng-click="vm.addLogo()">Press to add logo</button>
-    <button ng-click="vm.save()">Save</button>
+﻿<div flex layout="row" layout-fill id="welcome">
+    <div flex="100" layout-align="center center">
+        <md-toolbar>
+            <h1 class="md-toolbar-tools">
+                <span id="header" md-colors="{color: 'accent', background: 'primary'}">PolySoft: HackHarvard Edition</span>
+            </h1>
+        </md-toolbar>
+        <form layout="column" layout-align="center center" name="userForm">
+            <md-input-container class="md-block">
+                <label>What's your name?</label>
+                <input required md-no-asterisk name="name" ng-model="vm.name">
+                <div ng-messages="userForm.name.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <img ng-src={{vm.display}} class="md-card-image preview" alt="image caption" />
+
+            <md-button ng-click="vm.addLogo()">Upload a profile picture</md-button>
+            <md-button ng-click="vm.save()" class="medium-margin">Continue</md-button>
+        </form>
+    </div>
 </div>
