@@ -112,7 +112,10 @@
             window.localStorage.setItem("Logo", "undefined");
             $location.url('/NewProfile')
         }
-    }
 
-   
+        vm.navigate = function navigate(target, id) 
+        {
+            $location.url(target + id);
+        }
+    }
 })()

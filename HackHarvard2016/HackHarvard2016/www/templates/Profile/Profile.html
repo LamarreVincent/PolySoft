@@ -23,7 +23,7 @@
             <md-content>
                 <md-subheader md-colors="{color: 'accent-900'}">My cards</md-subheader>
                 <md-list>
-                    <md-list-item ng-repeat="card in vm.cards" class="md-3-line" md-ink-ripple="#3F51B5" ng-click="navigate('/Home')">
+                    <md-list-item ng-repeat="card in vm.cards" class="md-3-line" md-ink-ripple="#3F51B5" ng-click="vm.navigate('/businessCard?id=', $index)">
                         <div class="md-list-item-text">
                             <h3>{{card.Name}}</h3>
                             <p>From {{card.Company}}</p>

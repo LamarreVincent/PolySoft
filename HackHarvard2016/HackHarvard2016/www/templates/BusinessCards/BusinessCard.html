@@ -1,5 +1,15 @@
-﻿<div>
-    <p>COUCOU</p>
-    <p>{{vm.phoneNumber}}</p>
-    <p>{{vm.name}}</p>
+﻿<div layout="column" id="full-card">
+    <div>
+        <img src="images\\company-dummy.jpg" class="md-card-image profile-picture" alt="image caption" />
+    </div>
+    <div layout="row" id="infos">
+        <div flex="40">
+            <h3>{{vm.card.Name}}</h3>
+            <p>{{vm.card.Email}}</p>
+        </div>
+        <div flex="60">
+            <h3>{{vm.card.Job}} at {{vm.card.Company}}</h3>
+            <p>{{vm.card.Phone}}</p>
+        </div>
+    </div>
 </div>
