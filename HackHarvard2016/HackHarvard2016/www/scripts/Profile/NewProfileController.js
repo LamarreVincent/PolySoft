@@ -9,25 +9,22 @@
 
     function NewProfileController($rootScope, $scope, $cordovaCamera, $location) {
         var vm = this;
-        vm.name= "T";
+        vm.name= "";
         vm.phoneNumber;
         vm.email = "@";
-        vm.logo = "/";
+        vm.logo = 0;
+        vm.display = "images\\placeholder-user.png"
 
         vm.save = function ()
         {
             window.localStorage.setItem("ProfileName", vm.name);
             window.localStorage.setItem("Logo", vm.logo);
 
-            $location.path('/Events')
-
+            $location.path('/Profile')
         }
 
         vm.addLogo = function()
         {
-
-            window.alert("Logo")
-
             var options = {
                 destinationType: Camera.DestinationType.FILE_URI,
                 sourceType: Camera.PictureSourceType.CAMERA,
@@ -37,6 +34,7 @@
                 .then(function (imageURI)
                 {
                     vm.logo = imageURI;
+                    vm.display = imageURI;
                 }, function (err)
                 {
                     window.alert("Error");
