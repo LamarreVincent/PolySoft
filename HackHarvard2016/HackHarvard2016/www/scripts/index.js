@@ -11,9 +11,20 @@
         // Handle the Cordova pause and resume events
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener( 'resume', onResume.bind( this ), false );
-        
+        nfc.addNdefListener(this.nfcHandler,
+            function () { alert("Listen"); },
+            function (error) { alert(error) }
+            );
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
     };
+
+    function nfcHandler(nfcEvent)
+    {
+        var tag = nfcEvent.tag;
+        var ndefMessage = tag.ndefMessage;
+        var payload = nfc.bytesToString(ndefMessageBytes[0].payload);
+        alert(payload);
+    }
 
     function onPause() {
         // TODO: This application has been suspended. Save application state here.

@@ -69,6 +69,15 @@
 
             return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
         }
+
+        vm.addNFC = function()
+        {
+            var message = [
+                ndef.textRecord("hello, world")
+            ];
+
+            nfc.share(message, function () { alert("SEND"); }, function () { alert(":("); });
+        }
     }
 
 
