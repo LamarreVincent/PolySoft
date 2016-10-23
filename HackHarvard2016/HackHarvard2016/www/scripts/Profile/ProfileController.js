@@ -31,10 +31,6 @@
         {
             window.localStorage.setItem("ProfileName", "undefined");
             window.localStorage.setItem("Logo", "undefined");
-
-            console.log("Local storage: ");
-            console.log(window.localStorage.getItem("ProfileName"));
-            console.log(window.localStorage.getItem("Logo"));
         }
     }
 
