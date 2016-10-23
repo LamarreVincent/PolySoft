@@ -4,11 +4,7 @@
     <ReferenceCachePath>C:\Users\vincent\AppData\Local\Temp\x5x0o0jb_HackHarvard2016_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-<<<<<<< HEAD
-    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
-=======
-    <DebuggerFlavor>RippleNexusS</DebuggerFlavor>
->>>>>>> b3db9041edc6f05cb8a2f98543492b05a24a77a6
+    <DebuggerFlavor>AndroidEmulator</DebuggerFlavor>
     <AndroidEmulatorID>AndroidDevice;Device</AndroidEmulatorID>
   </PropertyGroup>
 </Project>

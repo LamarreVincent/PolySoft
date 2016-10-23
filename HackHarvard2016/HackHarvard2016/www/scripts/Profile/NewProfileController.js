@@ -26,7 +26,7 @@
         vm.addLogo = function()
         {
 
-            window.alert("Logo")
+            window.alert("Logo");
 
             var options = {
                 destinationType: Camera.DestinationType.FILE_URI,
