@@ -32,6 +32,7 @@
     {
         $mdThemingProvider.theme('default')
         .primaryPalette('deep-purple')
-        .accentPalette('deep-orange');
+        .accentPalette('deep-orange')
+        .warnPalette('red');
     }
 })()

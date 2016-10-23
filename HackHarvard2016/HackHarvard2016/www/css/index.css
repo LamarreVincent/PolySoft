@@ -29,13 +29,6 @@
     margin: 0;
 }
 
-md-content .ext-content 
-{
-  padding: 50px;
-  margin: 20px;
-  background-color: #FFF2E0; 
-}
-
 img.profile-picture 
 {
     border-radius: 10%;
@@ -67,4 +60,25 @@ img.profile-picture
 .medium-margin
 {
     margin: 20px 0 20px 0 !important;
+}
+
+#profile .content
+{
+    margin: 15px 0 15px 0 !important;
+}
+
+md-content .ext-content 
+{
+}
+
+#search md-icon
+{
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+}
+
+#search md-input-container
+{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }

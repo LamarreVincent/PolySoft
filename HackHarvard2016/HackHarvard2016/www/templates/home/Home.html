@@ -1,12 +1,18 @@
 ﻿<sidenav></sidenav>
 
 <md-grid-list md-cols="6" md-row-height="2:2" md-gutter="0" id="grid">
-    <md-grid-tile md-colspan="6" md-rowspan="4" id="section-header">
+    <md-grid-tile md-colspan="6" md-rowspan="6" id="section-header">
         <div layout="column" layout-align="center none">
             <img src="images\business-card.png" class="md-card-image" alt="image caption" />
             <div class="content">
                 <div class="md-subhead">PolySoft HackHarvard Edition</div>
                 <div class="md-caption">Swiftly exchange your business information</div>
+                <div layout="row" layout-align="center center" id="search">
+                    <md-icon flex="10" md-svg-icon="fonts/icons/search.svg"></md-icon>
+                    <md-input-container flex="90" class="md-block">
+                        <input name="search" ng-model="vm.search">
+                    </md-input-container>
+                </div>
             </div>
         </div>
     </md-grid-tile>

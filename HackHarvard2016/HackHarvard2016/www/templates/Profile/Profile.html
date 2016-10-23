@@ -2,7 +2,7 @@
     <sidenav></sidenav>
 
     <md-grid-list md-cols="6" md-row-height="2:2" md-gutter="0" id="profile">
-        <md-grid-tile md-colspan="6" md-rowspan="4" id="section-header">
+        <md-grid-tile md-colspan="6" md-rowspan="5" id="section-header">
             <div layout="column" layout-align="center none">
                 <img ng-src={{vm.logo}} class="md-card-image profile-picture" alt="image caption" />
                 <div class="content">
@@ -18,6 +18,33 @@
         <md-nav-item md-nav-click="goto('events')" name="events">Events</md-nav-item>
         <md-nav-item md-nav-click="goto('settings')" name="settings">Settings</md-nav-item>
     </md-nav-bar>
-    <div class="ext-content">
+    <div class="ext-content" ng-show="vm.currentNavItem == 'cards'">
         External content for '<span>{{vm.currentNavItem}}</span>'
+    </div>
+    <div class="ext-content" ng-show="vm.currentNavItem == 'events'">
+        External content for '<span>{{vm.currentNavItem}}</span>'
+    </div>
+    <div class="ext-content" ng-show="vm.currentNavItem == 'settings'">
+        <md-content>
+            <md-list>
+                <md-list-item class="md-3-line" md-ink-ripple="#3F51B5" ng-click="navigate('/Home')">
+                    <div class="md-list-item-text">
+                        <h3>Change profile picture</h3>
+                    </div>
+                    <md-divider></md-divider>
+                </md-list-item>
+                <md-list-item class="md-3-line" md-ink-ripple="#3F51B5" ng-click="navigate('/Home')">
+                    <div class="md-list-item-text">
+                        <h3>Change username</h3>
+                    </div>
+                    <md-divider></md-divider>
+                </md-list-item>
+                <md-list-item class="md-3-line" md-ink-ripple="#3F51B5" ng-click="vm.deleteProfile()">
+                    <div class="md-list-item-text">
+                        <h3>Delete account</h3>
+                    </div>
+                    <md-divider></md-divider>
+                </md-list-item>
+            </md-list>
+        </md-content>
     </div>
