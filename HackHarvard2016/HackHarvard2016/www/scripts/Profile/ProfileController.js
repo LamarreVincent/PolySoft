@@ -5,9 +5,9 @@
       .controller('ProfileController', ProfileController)
 
 
-    ProfileController.$inject = ['$rootScope', '$scope'];
+    ProfileController.$inject = ['$rootScope', '$scope', '$location'];
 
-    function ProfileController($rootScope, $scope) {
+    function ProfileController($rootScope, $scope, $location) {
         var vm = this;
         vm.name = window.localStorage.getItem("ProfileName");
         vm.logo = window.localStorage.getItem("Logo");
@@ -110,6 +110,7 @@
         {
             window.localStorage.setItem("ProfileName", "undefined");
             window.localStorage.setItem("Logo", "undefined");
+            $location.url('/NewProfile')
         }
     }
 
