@@ -13,9 +13,88 @@
         vm.logo = window.localStorage.getItem("Logo");
 
         vm.currentNavItem = 'cards';
-        vm.cards = 'These are cards';
-        vm.events = 'These are past, next, hosted events';
-        vm.settings = 'This is the settings section';
+        vm.cards = [
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Dunkin Donuts",
+                Email: "e@ma.il",
+                Job: "Regional manager",
+                Name: "Jim Freckels",
+                Phone: "(514) 123-4567"
+            },
+            {
+                Company: "Tim Hortons",
+                Email: "e@ma.il",
+                Job: "Cashier",
+                Name: "Bob Fuse",
+                Phone: "(514) 923-4567"
+            }
+        ];
+        vm.events = [
+            {
+                Address: "59 Shepard street, Cambridge",
+                Date: "2016-10-22",
+                EventName: "HackHarvard",
+                Time: "16:30",
+                CardList: [
+                    {
+                        Company: "Dunkin Donuts",
+                        Email: "e@ma.il",
+                        Job: "Regional manager",
+                        Name: "Jim Freckels",
+                        Phone: "(514) 123-4567"
+                    },
+                    {
+                        Company: "Tim Hortons",
+                        Email: "e@ma.il",
+                        Job: "Cashier",
+                        Name: "Bob Fuse",
+                        Phone: "(514) 923-4567"
+                    }
+                ]
+            }
+        ];
 
         vm.changeProfileName = function changeProfileName(profileName)
         {
