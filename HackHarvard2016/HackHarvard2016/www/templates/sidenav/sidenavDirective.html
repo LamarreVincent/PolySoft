@@ -1,9 +1,15 @@
 ﻿<md-sidenav md-component-id="left" class="md-sidenav-left">
     <md-list>
-        <md-list-item class="md-3-line nav-header" md-ink-ripple="#3F51B5" ng-click="navigate('/Profile')">
+        <md-list-item md-colors="{background: 'primary-400-1'}"class="md-3-line nav-header" md-ink-ripple="#3F51B5" ng-click="navigate('/Profile')">
             <div class="md-list-item-text" layout="row" layout-align="left none">
                 <md-icon md-svg-icon="fonts/icons/face.svg"></md-icon>
                 <h3>Username !!</h3>
+            </div>
+            <md-divider></md-divider>
+        </md-list-item>
+        <md-list-item class="md-3-line" md-ink-ripple="#3F51B5" ng-click="navigate('/Home')">
+            <div class="md-list-item-text">
+                <h3>Home</h3>
             </div>
             <md-divider></md-divider>
         </md-list-item>
@@ -28,7 +34,7 @@
     </md-list>
 </md-sidenav>
 
-<md-content class="md-accent">
+<md-content md-colors="{background: 'primary-500-0'}">
     <md-button class="md-icon-button" aria-label="Settings" ng-click="openLeftMenu()">
         <md-icon md-svg-icon="fonts/icons/menu.svg"></md-icon>
     </md-button>

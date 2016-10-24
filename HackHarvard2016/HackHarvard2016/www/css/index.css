@@ -4,8 +4,9 @@
 
 #section-header img
 {
-    padding: 2px;
-    height: 150px;
+    padding: 8px;
+    height: 200px;
+    height: 200px;
 }
 
 #section-header .content
@@ -26,4 +27,58 @@
 .md-sidenav-left md-list md-icon
 {
     margin: 0;
+}
+
+img.profile-picture 
+{
+    border-radius: 10%;
+}
+
+#welcome #header
+{
+    text-align: center;
+}
+
+
+md-input-container.md-default-theme label,   
+md-input-container.md-default-theme .md-placeholder {  
+    color: #FFF2E0 !important; 
+}
+
+#welcome md-input-container
+{
+    margin: 35px 0 15px 0 !important;
+}
+
+#welcome .preview,
+img.profile-picture 
+{
+    max-height: 600px;
+    max-width: 300px;
+}
+
+.medium-margin
+{
+    margin: 20px 0 20px 0 !important;
+}
+
+#profile .content
+{
+    margin: 15px 0 15px 0 !important;
+}
+
+md-content .ext-content 
+{
+}
+
+#search md-icon
+{
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+}
+
+#search md-input-container
+{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }

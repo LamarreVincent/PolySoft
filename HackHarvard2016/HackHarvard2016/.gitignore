@@ -4,7 +4,9 @@
 [Pp]lugins/wp8.json
 [Pp]lugins/remote_ios.json
 [Pp]latforms/
-plugins/cordova-plugin-whitelist
+plugins/
 bower_components/
+node_modules/
 bin/
 bld/
+config.xml
