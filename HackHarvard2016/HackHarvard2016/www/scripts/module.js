@@ -5,6 +5,7 @@
         'HackHarvard.test.controllers',
         "VirtualBusinessCard",
         "Events",
+        "Firebase",
         'ngMaterial',
         'Profile',
         'Home',
@@ -15,7 +16,8 @@
 
     angular.module('HackHarvard.routes', ['ngRoute']);
     angular.module('HackHarvard.test.controllers', []);
-    angular.module('Events', []);
+    angular.module('Events', ['Firebase']);
+    angular.module('Firebase', []);
     angular.module('Profile', []);
     angular.module('Home', ['ngRoute', 'SideNav']);
     angular.module('NewProfile', []);

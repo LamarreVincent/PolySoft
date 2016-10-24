@@ -19,11 +19,8 @@
             storageBucket: "vbcard-a78ab.appspot.com",
             messagingSenderId: "868537869129"
         };
+
         firebase.initializeApp(config);
-
-        var database = firebase.database();
-
-
     };
 
     function onPause() {
